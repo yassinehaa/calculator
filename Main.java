@@ -52,7 +52,7 @@ import java.util.Scanner;
         int f = 1;
         for (int i=1; i<=a; i++){
             f *= i;
-        }System.out.println(f);
+        }System.out.println(STR."la factorielle de \{a} est : \{f}");
 
 
     }
@@ -72,7 +72,7 @@ import java.util.Scanner;
             System.out.println("7: FACTORIELLE");
             System.out.println("8: QUITTER");
 
-            System.out.println("ENTRER VOTRE COIX");
+            System.out.println("ENTRER VOTRE CHOIX");
             n = input.nextInt();
             switch (n) {
                 case 1:
@@ -106,4 +106,3 @@ import java.util.Scanner;
         while (n != 8);
     }
 }
-
