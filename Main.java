@@ -1,52 +1,46 @@
+import javax.print.DocFlavor;
 import java.util.Scanner;
 
  public class Main {
+     static Scanner input = new Scanner(System.in);
+     static float[] infos() {
+         System.out.println("Entrer a :");
+         float a = input.nextFloat();
+         System.out.println("Entrer b :");
+         float b = input.nextFloat();
 
-    static void addition(Scanner input){
-        System.out.print("Enter a: ");
-        float a = input.nextFloat();
-        System.out.print("Enter b: ");
-        float b = input.nextFloat();
-        System.out.println(STR."la somme de \{a} et \{b} est: \{a + b}");
+         return new float[]{a, b};
+    }
+    static void addition(){
+        float[] values = infos();
+        System.out.println(STR."la somme de \{values[0]} et \{values[1]} est: \{values[0] + values[1]}");
     }
 
-    static void soustraction(Scanner input){
-        System.out.print("Enter a: ");
-        float a = input.nextFloat();
-        System.out.print("Enter b: ");
-        float b = input.nextFloat();
-        System.out.println(STR."\{a} - \{b} est: ");
+    static void soustraction(){
+        float[] values = infos();
+        System.out.println(STR."\{values[0]} - \{values[1]} est: \{values[0] - values[1]}");
     }
 
-    static void multiplication(Scanner input){
-        System.out.print("Enter a: ");
-        float a = input.nextFloat();
-        System.out.print("Enter b: ");
-        float b = input.nextFloat();
-        System.out.println(STR. "\{a} multiplié par \{b} est: \{a*b}");
+    static void multiplication(){
+        float[] values = infos();
+        System.out.println(STR. "\{values[0]} multiplié par \{values[1]} est: \{values[0]*values[1]}");
     }
 
-    static void division(Scanner input){
-        System.out.print("Enter a: ");
-        float a = input.nextFloat();
-        System.out.print("Enter b: ");
-        float b = input.nextFloat();
-        System.out.println(STR."\{a} divisé par \{b} est: \{a / b}");
+    static void division(){
+        float[] values = infos();
+        System.out.println(STR."\{values[0]} divisé par \{values[1]} est: \{values[0] / values[1]}");
 
     }
-    static void puissance (Scanner input){
-        System.out.println("entrer a: ");
-        float a = input.nextFloat();
-        System.out.println("entrer b: ");
-        float b = input.nextFloat();
-        System.out.println(STR."la puissance de \{a}^ \{b} est: \{Math.pow(a, b)}");
+    static void puissance (){
+        float[] values = infos();
+        System.out.println(STR."la puissance de \{values[0]}^ \{values[1]} est: \{Math.pow(values[0], values[1])}");
     }
-    static void racine(Scanner input){
+    static void racine(){
         System.out.println("entrer le numero: ");
         float a = input.nextFloat();
-        System.out.println(STR."la racine carré est /\{Math.sqrt(a)}");
+        System.out.println(STR."la racine carré est : \{Math.sqrt(a)}");
     }
-    static void factorielle(Scanner input){
+    static void factorielle(){
         System.out.println("entrer le numero: ");
         int a = input.nextInt();
         int f = 1;
@@ -58,7 +52,6 @@ import java.util.Scanner;
     }
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
 
         int n;
         do {
@@ -76,25 +69,25 @@ import java.util.Scanner;
             n = input.nextInt();
             switch (n) {
                 case 1:
-                    addition(input);
+                    addition();
                     break;
                 case 2:
-                    soustraction(input);
+                    soustraction();
                     break;
                 case 3:
-                    multiplication(input);
+                    multiplication();
                     break;
                 case 4:
-                    division(input);
+                    division();
                     break;
                 case 5:
-                    puissance(input);
+                    puissance();
                     break;
                 case 6:
-                    racine(input);
+                    racine();
                     break;
                 case 7:
-                    factorielle(input);
+                    factorielle();
                     break;
                 case 8:
                     System.out.println("quitter");
