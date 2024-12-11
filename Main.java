@@ -7,7 +7,7 @@ import java.util.Scanner;
         float a = input.nextInt();
         System.out.print("Enter b: ");
         float b = input.nextInt();
-        System.out.println(a + b);
+        System.out.println(STR."la somme de \{a} et \{b} est: ");
     }
 
     static void soustraction(Scanner input){
@@ -15,7 +15,7 @@ import java.util.Scanner;
         float a = input.nextInt();
         System.out.print("Enter b: ");
         float b = input.nextInt();
-        System.out.println(a - b);
+        System.out.println(STR."\{a} - \{b} est: ");
     }
 
     static void multiplication(Scanner input){
@@ -23,7 +23,7 @@ import java.util.Scanner;
         float a = input.nextInt();
         System.out.print("Enter b: ");
         float b = input.nextInt();
-        System.out.println(a * b);
+        System.out.println(STR. "\{a} multiplié par \{b} est: \{a*b}");
     }
 
     static void division(Scanner input){
@@ -31,7 +31,7 @@ import java.util.Scanner;
         float a = input.nextInt();
         System.out.print("Enter b: ");
         float b = input.nextInt();
-        System.out.println(a / b);
+        System.out.println(STR."\{a} divisé par \{b} est: \{a / b}");
 
     }
     static void puissance (Scanner input){
