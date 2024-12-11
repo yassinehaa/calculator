@@ -4,46 +4,46 @@ import java.util.Scanner;
 
     static void addition(Scanner input){
         System.out.print("Enter a: ");
-        float a = input.nextInt();
+        float a = input.nextFloat();
         System.out.print("Enter b: ");
-        float b = input.nextInt();
-        System.out.println(STR."la somme de \{a} et \{b} est: ");
+        float b = input.nextFloat();
+        System.out.println(STR."la somme de \{a} et \{b} est: \{a + b}");
     }
 
     static void soustraction(Scanner input){
         System.out.print("Enter a: ");
-        float a = input.nextInt();
+        float a = input.nextFloat();
         System.out.print("Enter b: ");
-        float b = input.nextInt();
+        float b = input.nextFloat();
         System.out.println(STR."\{a} - \{b} est: ");
     }
 
     static void multiplication(Scanner input){
         System.out.print("Enter a: ");
-        float a = input.nextInt();
+        float a = input.nextFloat();
         System.out.print("Enter b: ");
-        float b = input.nextInt();
+        float b = input.nextFloat();
         System.out.println(STR. "\{a} multiplié par \{b} est: \{a*b}");
     }
 
     static void division(Scanner input){
         System.out.print("Enter a: ");
-        float a = input.nextInt();
+        float a = input.nextFloat();
         System.out.print("Enter b: ");
-        float b = input.nextInt();
+        float b = input.nextFloat();
         System.out.println(STR."\{a} divisé par \{b} est: \{a / b}");
 
     }
     static void puissance (Scanner input){
         System.out.println("entrer a: ");
-        float a = input.nextInt();
+        float a = input.nextFloat();
         System.out.println("entrer b: ");
-        float b = input.nextInt();
+        float b = input.nextFloat();
         System.out.println(STR."la puissance de \{a}^ \{b} est: \{Math.pow(a, b)}");
     }
     static void racine(Scanner input){
         System.out.println("entrer le numero: ");
-        float a = input.nextInt();
+        float a = input.nextFloat();
         System.out.println(STR."la racine carré est /\{Math.sqrt(a)}");
     }
     static void factorielle(Scanner input){
